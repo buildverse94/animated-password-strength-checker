@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Checker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Italianno&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito+Sans:opsz@6..12&family=Nunito:ital@0;1&family=Playwrite+CU+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,200;1,300;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-card" id="appCard">
+      <header class="header">
+        <div class="logo-badge">
+          <i class="fa-solid fa-shield"></i>
+          Attitude Shield
+        </div>
+
+        <h1>Passoword Analyzer</h1>
+        <p>Real-time stregth evaluation & generator</p>
+      </header>
+
+      <section class="input-section">
+        <div class="input-wrapper">
+          <input
+            type="password"
+            id="passwordInput"
+            class="password-input"
+            placeholder="Enter a generate password"
+            autocomplete="off"
+            spellcheck="false"
+          />
+
+          <div class="input-actions">
+            <button
+              class="icon-btn"
+              id="togglePasswordBtn"
+              title="Toggle Visibility"
+              aria-label="Toggle password visibility"
+            >
+              <i id="eyeIcon" class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="actions-grid">
+            <button class="btn btn-secondary" id="generateBtn">
+                <i class="fa-solid fa-arrows-rotate"></i>
+                Generate
+            </button>
+
+            <button class="btn btn-primary" id="copyBtn">
+                <i class="fa-regular fa-copy"></i>
+                Copy Passoword
+            </button>
+        </div>
+      </section>
+
+      <section class="meter-container">
+        <div class="meter-header">
+            <span class="meter-label">Passoword Strength</span>
+
+            <span class="meter-status" id="meterStatus">
+                <span id="statusText">Too Short</span>
+                <span class="score-percentage" id="scorePercentage">(0%)</span>
+            </span>
+        </div>
+
+        <div class="meter-bar-track">
+            <div class="meter-bar-fill" id="meterFill">
+            </div>
+        </div>
+      </section>
+
+      <section class="checklist-section">
+        <div class="section-title">Requirement</div>
+
+        <div class="checklist">
+            <div class="check-item" id="reqLength">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <span>8+ Characters</span>
+            </div>
+            <div class="check-item" id="reqUpper">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <span>Uppercase</span>
+            </div>
+            <div class="check-item" id="reqLower">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <span>Lowercase</span>
+            </div>
+            <div class="check-item" id="reqNumber">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <span>Number (0-9)</span>
+            </div>
+            <div class="check-item" id="reqSymbol">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <span>Special Character</span>
+            </div>
+        </div>
+      </section>
+
+      <section class="tips-section" id="tipsSection">
+        <div class="tips-header">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span>Security Recommendations</span>
+        </div>
+
+        <ul class="tips-list" id="tipsList">
+            <li>Start typing to receive security feedback</li>
+        </ul>
+      </section>
+
+      <div class="celebration-box" id="celebrationBox">
+        <i class="fa-regular fa-circle-check"></i>
+
+        <div class="celebration-title">
+            Excelllent Protection
+        </div>
+        <div class="celebration-text">
+            Your password meets high cybersecurity statdards.
+        </div>
+      </div>
+    </main>
+
+    <div class="toast" id="toast">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>Password copied to clipboard!</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
