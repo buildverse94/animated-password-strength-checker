@@ -90,7 +90,6 @@ This project is open-source and available for learning and personal use. Add a s
 ⭐ **If you like this project, consider giving the repository a star!**
 
 # 💻 Image 
-![Uploading Screenshot 2026-10-09 151550.png…]()
-
+<img width="1247" height="916" alt="Screenshot 2026-10-09 151550" src="https://github.com/user-attachments/assets/1a4ce09a-3975-4fb5-aa82-97a3bb1a0508" />
 
 💙 Thanks for visiting!
