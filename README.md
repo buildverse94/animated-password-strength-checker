@@ -37,7 +37,7 @@ Follow these steps to run the project locally.
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+https://github.com/buildverse94/animated-password-strength-checker
 ```
 
 ### 2. Open the Project Folder
@@ -64,7 +64,7 @@ The checker evaluates whether a password contains:
 
 Learn how to build this project step by step using HTML, CSS, and JavaScript.
 
-**YouTube Tutorial:** [Add Your YouTube Video Link Here]
+**YouTube Tutorial:** https://youtu.be/J1SotkYU80Q?si=jPArTCNSXafbqlF4
 
 ## 👩‍💻 Author
 
@@ -72,8 +72,8 @@ Learn how to build this project step by step using HTML, CSS, and JavaScript.
 
 Explore creative frontend projects, modern UI designs, animations, and web development tutorials.
 
-- **GitHub:** [Add Your GitHub Profile Link]
-- **YouTube:** [BuildVerseHub](ADD_YOUR_YOUTUBE_CHANNEL_LINK_HERE)
+- **GitHub:** https://github.com/buildverse94
+- **YouTube:** [BuildVerseHub]https://www.youtube.com/@BuildVerseHub-x1u
 
 ## 📌 Future Improvements
 
